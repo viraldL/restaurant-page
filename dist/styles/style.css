@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@400;600&display=swap");
 header {
   width: 100%;
@@ -122,4 +123,40 @@ body::after {
   z-index: -1;
   background-repeat: no-repeat;
   filter: brightness(50%);
+}
+
+#content {
+  width: 100%;
+  height: calc(100% - 175px);
+}
+
+.mainLoad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 80%;
+  margin-left: 50px;
+}
+.mainLoad h2 {
+  position: relative;
+  color: #fbf8f3;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+}
+.mainLoad h2::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "";
+  background-image: url("../images/Flag_of_Italy_(1946–2003).png");
+  background-size: contain;
+  width: 45px;
+  height: 30px;
+}
+.mainLoad p {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(251, 248, 243, 0.5);
+  line-height: 1.5em;
 }/*# sourceMappingURL=style.css.map */
