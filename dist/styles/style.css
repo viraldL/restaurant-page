@@ -1,3 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@400;600&display=swap");
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  color: #fbf8f3;
+  width: 30%;
+  font-size: 1.5rem;
+  gap: 0.3em;
+}
+header h1 span {
+  letter-spacing: 0.1em;
+}
+header h1 span::first-letter {
+  font-size: 1.5em;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  margin-right: 100px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  gap: 150px;
+}
+header nav ul li button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border: none;
+  background-color: #fbf8f3;
+  padding: 10px 25px;
+  border-radius: 7px;
+  color: #111827;
+  border: 2px solid #fbf8f3;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+header nav ul li button:hover {
+  background: rgba(251, 248, 243, 0.1);
+  border: 2px solid #fbf8f3;
+  color: #fbf8f3;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+}
+footer .copyright {
+  color: #fbf8f3;
+  padding: 0 35px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+footer .photoattr {
+  color: #fbf8f3;
+  font-family: "Montserrat", sans-serif;
+}
+footer .photoattr a {
+  color: #b2f8b2;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+footer .socials span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+footer .socials span a img {
+  width: 30px;
+  transition: width 0.2s ease-in-out;
+}
+footer .socials span a img:hover {
+  width: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: blue;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+body::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/georgia-z-JG5lgvc57qE-unsplash.jpg);
+  background-size: 100vw;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
 }/*# sourceMappingURL=style.css.map */
