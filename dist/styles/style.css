@@ -40,20 +40,26 @@ header nav ul {
 }
 header nav ul li button {
   font-family: "Montserrat", sans-serif;
+  position: relative;
   font-size: 1rem;
+  padding: 10px 10px;
+  background: transparent;
   border: none;
-  background-color: #fbf8f3;
-  padding: 10px 25px;
-  border-radius: 7px;
-  color: #111827;
-  border: 2px solid #fbf8f3;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
-}
-header nav ul li button:hover {
-  background: rgba(251, 248, 243, 0.1);
-  border: 2px solid #fbf8f3;
   color: #fbf8f3;
+  cursor: pointer;
+}
+header nav ul li button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #fbf8f3;
+  transition: width 0.2s ease-in-out;
+}
+header nav ul li button:hover::after {
+  width: 99%;
 }
 
 footer {
@@ -99,37 +105,6 @@ footer .socials span a img:hover {
   width: 35px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-body::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: url(../images/georgia-z-JG5lgvc57qE-unsplash.jpg);
-  background-size: 100vw;
-  background-size: cover;
-  z-index: -1;
-  background-repeat: no-repeat;
-  filter: brightness(50%);
-}
-
-#content {
-  width: 100%;
-  height: calc(100% - 175px);
-}
-
 .mainLoad {
   display: flex;
   align-items: flex-start;
@@ -159,4 +134,132 @@ body::after {
   font-family: "Montserrat", sans-serif;
   color: rgba(251, 248, 243, 0.5);
   line-height: 1.5em;
+}
+
+.menu {
+  width: 100%;
+  height: calc(100% - 175px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menuLoad {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+  height: 200px;
+  margin-left: 50px;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 2rem;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  position: relative;
+}
+.menuLoad::-webkit-scrollbar {
+  height: 100%;
+  width: 5px;
+}
+.menuLoad::-webkit-scrollbar-thumb {
+  background-color: rgba(251, 248, 243, 0.5);
+  border-radius: 10px;
+}
+.menuLoad::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(251, 248, 243, 0.8);
+}
+.menuLoad .dish {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 5px solid #fbf8f3;
+  gap: 1.5rem;
+}
+.menuLoad .dish img {
+  width: 200px;
+}
+.menuLoad .dish .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.menuLoad .dish .right h4 {
+  color: #fbf8f3;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 0.9em;
+}
+.menuLoad .dish .right .desc {
+  color: rgba(251, 248, 243, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+.menuLoad .dish .right .sizes {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.menuLoad .dish .right .sizes span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fbf8f3;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+.menuLoad .dish .right .sizes span p {
+  font-family: "Montserrat", sans-serif;
+  color: #fbf8f3;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.menuLoad .dish .right .sizes span p:first-child {
+  font-size: 0.7rem;
+  color: rgba(251, 248, 243, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+body::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(../images/georgia-z-JG5lgvc57qE-unsplash.jpg);
+  background-size: 100vw;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+}
+
+#content {
+  width: 100%;
+  height: calc(100% - 175px);
 }/*# sourceMappingURL=style.css.map */

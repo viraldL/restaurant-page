@@ -30,19 +30,25 @@ header {
             li {
                 button {
                     @include fontNormal;
+                    position: relative;
                     font-size: 1rem;
+                    padding: 10px 10px;
+                    background: transparent;
                     border: none;
-                    background-color: $textWhite;
-                    padding: 10px 25px;
-                    border-radius: 7px;
-                    color: $textDark;
-                    border: 2px solid $textWhite;
+                    color: $textWhite;
                     cursor: pointer;
-                    transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out ;
-                    &:hover {
-                        background: rgba($color: $textWhite, $alpha: 0.1);
-                        border: 2px solid $textWhite;
-                        color: $textWhite;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 0;
+                        background: $textWhite;
+                        transition: width 0.2s ease-in-out;
+                    }
+                    &:hover::after {
+                        width: 99%;
                     }
                 }
             }
