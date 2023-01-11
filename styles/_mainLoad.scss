@@ -1,0 +1,30 @@
+.mainLoad {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    margin-left: 50px;
+    h2 {
+        position: relative;
+        color: $textWhite;
+        @include fontItalia;
+        font-size: 4rem;
+        &::before {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            content: "";
+            background-image: url("../images/Flag_of_Italy_\(1946–2003\).png");
+            background-size: contain;
+            width: calc(30px * 1.5);
+            height: 30px;
+        }
+    }
+    p {
+        @include fontNormal;
+        color: rgba($color: $textWhite, $alpha: 0.5);
+        line-height: 1.5em;
+    }
+}
