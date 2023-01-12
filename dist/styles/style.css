@@ -233,6 +233,56 @@ footer .socials span a img:hover {
   font-size: 0.7rem;
   color: rgba(251, 248, 243, 0.5);
 }
+.menuLoad .attribute {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fbf8f3;
+  gap: 0.5em;
+}
+.menuLoad .attribute a {
+  color: #b2f8b2;
+}
+
+.contactLoad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 80%;
+  margin-left: 50px;
+}
+.contactLoad h2 {
+  position: relative;
+  color: #fbf8f3;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+}
+.contactLoad h2::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  content: "";
+  background-image: url("../images/Flag_of_Italy_(1946–2003).png");
+  background-size: contain;
+  width: 45px;
+  height: 30px;
+}
+.contactLoad p {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(251, 248, 243, 0.5);
+  line-height: 1.5em;
+}
+.contactLoad p a {
+  margin-left: 0.5em;
+  color: #fbf8f3;
+}
+.contactLoad p a:hover {
+  color: #b2f8b2;
+}
 
 * {
   margin: 0;

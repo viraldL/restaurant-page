@@ -1,9 +1,10 @@
 import mainLoad from "./mainPage.js";
 import { menuLoad, menuAnimation } from "./menuPage.js";
+import contactLoad from "./contactPage.js";
 
 const load = (function(){
     window.addEventListener("DOMContentLoaded", () => {
-        // mainLoad();
+        mainLoad();
     });
 })();
 
@@ -23,6 +24,7 @@ const displayController = (function(){
         }, 500);
     })
     contactBtn.addEventListener("click", () => {
+        contactLoad();
     })
 })();
 

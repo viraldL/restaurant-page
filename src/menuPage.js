@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 const menuLoad = function() {
     const mainContent = document.querySelector("#content");
     mainContent.innerHTML = "";
+    mainContent.setAttribute("class", "");
     mainContent.classList.add("menu");
     const div = document.createElement("div");
     div.classList.add("menuLoad")
@@ -95,7 +96,8 @@ const menuLoad = function() {
             </span>
         </div>
     </div>
-</div>`
+</div>
+<div class="attribute"><a href="https://www.freepik.com/free-vector/set-cartoon-pizzas-with-different-stuffing-flat-illustration_14625624.htm#query=pizza%20margherita&position=1&from_view=search&track=sph">Image by pch.vector</a> on Freepik</div>`
     div.innerHTML = content;
     mainContent.appendChild(div);
     gsap.from(".menuLoad", { delay: 0.5, duration: 0.5, opacity: 0});
