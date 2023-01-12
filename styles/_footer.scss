@@ -1,4 +1,7 @@
 footer {
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,8 +22,14 @@ footer {
         a{
             color: #b2f8b2;
         }
+    @media (max-width: 500px) {
+        display: none;
+    }
     }
     .socials {
+        @media (max-width: 500px) {
+            display: none;
+        }
         @include flexCenter;
         width: 300px;
         span{

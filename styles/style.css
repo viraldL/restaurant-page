@@ -21,6 +21,11 @@ header h1 span {
 header h1 span::first-letter {
   font-size: 1.5em;
 }
+@media (max-width: 1000px) {
+  header h1 {
+    width: 100%;
+  }
+}
 header nav {
   display: flex;
   align-items: center;
@@ -61,6 +66,27 @@ header nav ul li button::after {
 header nav ul li button:hover::after {
   width: 99%;
 }
+@media (max-width: 1000px) {
+  header nav ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  header nav ul {
+    gap: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  header nav {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+  }
+}
 
 footer {
   display: flex;
@@ -71,6 +97,11 @@ footer {
   left: 0;
   width: 100%;
   height: 75px;
+}
+@media (max-width: 500px) {
+  footer {
+    justify-content: center;
+  }
 }
 footer .copyright {
   color: #fbf8f3;
@@ -85,11 +116,21 @@ footer .photoattr {
 footer .photoattr a {
   color: #b2f8b2;
 }
+@media (max-width: 500px) {
+  footer .photoattr {
+    display: none;
+  }
+}
 footer .socials {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 300px;
+}
+@media (max-width: 500px) {
+  footer .socials {
+    display: none;
+  }
 }
 footer .socials span {
   display: flex;
@@ -135,6 +176,13 @@ footer .socials span a img:hover {
   color: rgba(251, 248, 243, 0.5);
   line-height: 1.5em;
 }
+@media (max-width: 600px) {
+  .mainLoad {
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+  }
+}
 
 .menu {
   width: 100%;
@@ -156,6 +204,13 @@ footer .socials span a img:hover {
   overflow-x: hidden;
   gap: 2rem;
   position: relative;
+}
+@media (max-width: 900px) {
+  .menuLoad {
+    width: 80%;
+    height: 80%;
+    margin: 0 10px;
+  }
 }
 .menuLoad:first-child::after {
   position: absolute;
@@ -181,8 +236,19 @@ footer .socials span a img:hover {
   border-left: 5px solid #fbf8f3;
   gap: 1.5rem;
 }
+@media (max-width: 700px) {
+  .menuLoad .dish {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+}
 .menuLoad .dish img {
   width: 300px;
+}
+@media (max-width: 700px) {
+  .menuLoad .dish img {
+    width: 200px;
+  }
 }
 .menuLoad .dish .right {
   display: flex;
@@ -254,6 +320,13 @@ footer .socials span a img:hover {
   width: 40%;
   height: 80%;
   margin-left: 50px;
+}
+@media (max-width: 620px) {
+  .contactLoad {
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+  }
 }
 .contactLoad h2 {
   position: relative;
