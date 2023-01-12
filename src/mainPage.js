@@ -3,9 +3,9 @@ import { gsap } from "gsap";
 const mainLoad = function() {
     const mainContent = document.querySelector("#content");
     mainContent.innerHTML = "";
+    mainContent.setAttribute("class", "");
     const mainDiv = document.createElement("div");
     mainDiv.classList.add("mainLoad");
-
     const h2 = document.createElement("h2");
     h2.textContent = "Sapore Italiano";
 
