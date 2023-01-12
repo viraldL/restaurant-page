@@ -89,4 +89,14 @@
             }
         }
     }
+    .attribute {
+        width: 100%;
+        @include flexCenter;
+        @include fontNormal;
+        color: $textWhite;
+        gap: 0.5em;
+        a{
+            color: #b2f8b2;
+        }
+    }
 }
