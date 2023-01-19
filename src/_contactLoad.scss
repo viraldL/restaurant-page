@@ -1,8 +1,8 @@
 .contactLoad {
-    @media (max-width: 620px) {
-        width: 100%;
+    @media (max-width: 600px) {
+        width: 90%;
         height: 100%;
-        margin: 0 10px;
+        margin: 0 auto;
     }
     display: flex;
     align-items: flex-start;

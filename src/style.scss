@@ -36,4 +36,9 @@ body {
 #content {
     width: 100%;
     height: calc(100% - 175px);
+    @media (max-width: 600px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
