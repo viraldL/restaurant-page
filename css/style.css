@@ -178,9 +178,9 @@ footer .socials span a img:hover {
 }
 @media (max-width: 600px) {
   .mainLoad {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 auto;
   }
 }
 
@@ -208,8 +208,8 @@ footer .socials span a img:hover {
 @media (max-width: 900px) {
   .menuLoad {
     width: 80%;
-    height: 80%;
-    margin: 0 10px;
+    height: 500px;
+    margin: 0 auto;
   }
 }
 .menuLoad:first-child::after {
@@ -240,6 +240,7 @@ footer .socials span a img:hover {
   .menuLoad .dish {
     flex-direction: column;
     margin: 10px 0;
+    height: 500px;
   }
 }
 .menuLoad .dish img {
@@ -256,6 +257,12 @@ footer .socials span a img:hover {
   justify-content: center;
   align-items: flex-start;
   gap: 0.5rem;
+}
+@media (max-width: 700px) {
+  .menuLoad .dish .right {
+    margin-left: 1rem;
+    align-items: center;
+  }
 }
 .menuLoad .dish .right h4 {
   color: #fbf8f3;
@@ -277,6 +284,11 @@ footer .socials span a img:hover {
   justify-content: center;
   justify-content: flex-start;
   gap: 20px;
+}
+@media (max-width: 700px) {
+  .menuLoad .dish .right .sizes {
+    justify-content: center;
+  }
 }
 .menuLoad .dish .right .sizes span {
   display: flex;
@@ -301,6 +313,7 @@ footer .socials span a img:hover {
 }
 .menuLoad .attribute {
   width: 100%;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,11 +334,11 @@ footer .socials span a img:hover {
   height: 80%;
   margin-left: 50px;
 }
-@media (max-width: 620px) {
+@media (max-width: 600px) {
   .contactLoad {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 auto;
   }
 }
 .contactLoad h2 {
@@ -386,4 +399,11 @@ body::after {
 #content {
   width: 100%;
   height: calc(100% - 175px);
+}
+@media (max-width: 600px) {
+  #content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
